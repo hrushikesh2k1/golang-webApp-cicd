@@ -38,5 +38,13 @@ Azure account with access to Azure Container registry, Azure Kubernetes Service,
 ```
   sudo snap install kubectl --classic
 ```
-3. 
+3. Create the Kubernetes cluster in azure, after that configure it using below command
+```
+az aks get-credentials --name k8s --overwrite-existing --resource-group azure-devops-demo
+```
+4. configure argocd
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
 
