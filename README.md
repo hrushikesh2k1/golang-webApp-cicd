@@ -16,4 +16,19 @@ The server will start on port 8080. You can access it by navigating to `http://l
 
 ![Website](static/images/golang-website.png)
 
+## pre-requisite
+
+Azure account with access to Azure Container registry, Azure Kubernetes Service, Azure VMSS & VM.
+
+## Steps to follow for Continuous Integration (CI)
+
+1. Login to Azure DevOps.
+2. Create the project > Go to Repo's section > Import the repo from GitHub.
+3. Go to Pipeline section and Create New pipeline > select the template as Docker Build and Push.
+4. You will be seeing the yaml file. Change the yaml according to the yaml file given in this repo (azure-pipeline.yaml).
+5. Run the pipeline by selecting the azure default pool or select self hosted pool by creating a VM in azure and configuring it as agent pool.
+
+## Steps to follow for Continuous Deployment (CD)
+
+1. 
 
