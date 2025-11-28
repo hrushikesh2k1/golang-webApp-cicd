@@ -30,5 +30,13 @@ Azure account with access to Azure Container registry, Azure Kubernetes Service,
 
 ## Steps to follow for Continuous Deployment (CD)
 
-1. 
+1. Install Azure cli in your machine(linux).
+```
+  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+2. Install Kubectl for interacting with AKS.
+```
+  sudo snap install kubectl --classic
+```
+3. 
 
