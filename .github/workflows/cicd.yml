@@ -28,7 +28,3 @@ jobs:
           tags: |
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
             ${{ env.IMAGE_NAME }}:latest
-
-Notes:
-- DOCKERHUB_USERNAME and DOCKERHUB_TOKEN must be set as repository secrets for this workflow to login and push.
-- The workflow tags the image with the commit SHA and latest. Adjust IMAGE_NAME if you prefer another repository/image name.
